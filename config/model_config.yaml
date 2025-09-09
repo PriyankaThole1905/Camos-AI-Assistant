@@ -1,0 +1,19 @@
+# config/model_config.yaml
+
+# Embedding Model Configuration
+embedding_model_name: "sentence-transformers/all-MiniLM-L6-v2"
+embedding_model_kwargs: {'device': 'cpu'} # Use 'cuda' if you have an NVIDIA GPU
+
+# Document Processing
+chunk_size: 1000
+chunk_overlap: 200
+vector_store_path: "data/faiss_index" # Path for FAISS index
+
+# Ollama LLM Configuration
+ollama_model_name: "mistral" # Ensure you have pulled this model using 'ollama pull mistral'
+ollama_base_url: "http://localhost:11434" # Base URL for Ollama API
+ollama_temperature: 0.3 # Adjust for creativity vs. factual accuracy (0.0 - 1.0)
+
+# Other
+pdf_data_dir: "data/raw_pdfs"
+excel_faq_file: "data/faqs.xlsx"

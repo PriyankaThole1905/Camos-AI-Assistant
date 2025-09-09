@@ -1,0 +1,14 @@
+streamlit
+pandas
+openpyxl
+PyMuPDF
+pillow
+pytesseract
+camelot-py[cv]
+tabula-py
+pyyaml
+# LangChain specific packages
+langchain
+langchain-community
+sentence-transformers # For SentenceTransformerEmbeddings
+faiss-cpu # For FAISS vector store
